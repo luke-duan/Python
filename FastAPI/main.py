@@ -7,6 +7,7 @@ app = FastAPI()  # 创建 api 对象
 def root():
     return {"天津": "加油！！！"}
 
+
 @app.get("/say/{data}")
 def say(data: str, q: int):
     return {"data": data, "item": q}
